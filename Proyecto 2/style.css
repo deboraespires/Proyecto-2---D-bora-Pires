@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Indie+Flower&family=Italiana&family=KoHo:wght@300;400&family=Montserrat&family=Roboto:wght@300&family=Ubuntu&display=swap');
+
+:root {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    --rtc-charcoal: #424C55;
+    --rtc-blush: #F5EDF0;
+    --rtc-dyke: #3D2C2E;
+    --rtc-lavender: #D1CCDC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--rtc-blush);
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    color:var(--rtc-charcoal);
+}
+
+header > img {
+    height: 100px;
+    width: 50%;
+}
+
+.filter, .bookSelection {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    flex-wrap: wrap;
+    background-color: var(--rtc-blush);
+}
+
+.filter > h2 {
+    color: var(--rtc-charcoal);
+}
+
+.filter > select {
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid var(--rtc-charcoal);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter > button {
+    background-color: var(--rtc-charcoal);
+    color: var(--rtc-lavender);
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid var(--rtc-charcoal);
+    border-radius: 5px;
+}
+
+.bookSelection > div {
+    width: 40%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid var(--rtc-dyke);
+    background-color: var(--rtc-lavender);
+    background-image: url("https://www.transparenttextures.com/patterns/little-triangles.png");
+    color: var(--rtc-dyke);
+}
+
+.bookSelection > div > img {
+    height: 70%;
+    width: 50%;
+}
+
+footer {
+    padding: 20px;
+    display: flex;
+    background-color: var(--rtc-lavender);
+    background-image: url("https://www.transparenttextures.com/patterns/little-triangles.png");
+    color: var(--rtc-dyke);
+    align-items: center;
+    justify-content: center;
+}
