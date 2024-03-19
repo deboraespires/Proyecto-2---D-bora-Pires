@@ -113,6 +113,13 @@ const filterBooks = () => {
     });
 
     printBooks(filteredBooks);
+
+    const bookSection = document.querySelector(".bookSelection");
+    if (filteredBooks.length === 0) {
+        const message = document.createElement('p');
+        message.textContent = 'No matches found.';
+        bookSection.appendChild(message);
+    }
 };
 
 const createSelectGenre = () => {

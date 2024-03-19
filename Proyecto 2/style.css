@@ -96,3 +96,9 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 600px) {
+    .filter, .bookSelection {
+        flex-direction: column;
+    }
+}
